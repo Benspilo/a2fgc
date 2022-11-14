@@ -1,0 +1,45 @@
+#logo{
+    width: 475px;
+    animation: hw5_move 5s;
+}
+
+@keyframes hw5_move{
+    from{width: 25px;}
+    to{width:475px;}
+}
+
+body{
+    font-family: "Poppins", serif;
+    background-color: #f1f1f1;
+    background-image: url("../images/concrete_seamless.png");
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card header{
+    background-color: #288088;
+    border: 2px;
+    border-radius: 50px;
+}
+
+div .card{
+    border: 2px;
+    border-radius: 50px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+@media only screen and (min-width: 750px){
+
+}
