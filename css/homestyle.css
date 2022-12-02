@@ -1,21 +1,23 @@
-.skip{
-    position: absolute;
-    top: -40px;
-  }
-  
-  /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
-  .skip a:focus{
-    position:relative;
-    top:60px;
-  
-  }
 
-  
-:focus{
-    border:solid 2px;
-  }
 
-.banner_img{
-    max-width: 100px;
+.gallery{
+  border: 3px solid black;
+  width: 90%;
+  margin: 10px auto;
+  background-color: blanchedalmond;
+
+
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.gallery img{
+  width:100%;
+  border: 10px solid firebrick;
+}
+
+.lb-data .lb-caption{
+  font-size: 40px;
+}

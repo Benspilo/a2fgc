@@ -1,0 +1,67 @@
+
+.skip-to-content-link{
+  left: 50%;
+  position:absolute;
+  transform: translateY(-110%);
+}
+.skip-to-content-link:focus{
+  transform: translateY(0%)
+}
+:focus{
+    border:solid 2px;
+}
+
+.banner_img{
+background-attachment: fixed; /* Parallax effect */     
+background-position: center;  /* Parallax effect */
+background-repeat: no-repeat; /* Parallax effect */
+background-size: cover;       /* Parallax effect */
+color: white;
+height: 400px;                /* Parallax effect */
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+  
+body{
+background-color: #737373;
+font-size: 18px;
+line-height: 1.15;
+margin: 0;
+padding: 0;
+}
+
+footer{
+background-color: black;
+color: white;
+padding-top: 30px;
+text-align: center;
+}
+  
+nav{
+    background-color: #ddd;
+    padding: 25px 0; 
+    text-align: left;
+}
+
+
+.Contacts{
+    object-fit:fill;
+    max-height: 5px;
+    /* width: 30%; */
+    display: grid;
+    grid-template-columns: auto 15% 15% 15% auto ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Contacts img{
+  max-height: 5%;
+}
+/* .Contacts #discord{
+    max-height: 5%;
+} */
+/* .Contacts #discord{
+    grid-column: 2;
+} */
