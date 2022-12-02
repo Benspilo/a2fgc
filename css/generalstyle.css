@@ -45,23 +45,35 @@ nav{
     text-align: left;
 }
 
+nav a:hover, :focus{
+  text-decoration: underline;
+}
+nav a:focus{
+  text-decoration: underline;
+}
+
+nav li{
+  display:inline;
+  padding-right:20px;
+
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
 
 .Contacts{
     object-fit:fill;
-    max-height: 5px;
-    /* width: 30%; */
     display: grid;
-    grid-template-columns: auto 15% 15% 15% auto ;
-    justify-content: space-between;
+    grid-template-columns:  15% 15% 15% 15%  ;
+    justify-content: space-around;
     align-items: center;
 }
 
-.Contacts img{
-  max-height: 5%;
+.Contacts a img{
+  max-height: 50px;
 }
-/* .Contacts #discord{
-    max-height: 5%;
-} */
-/* .Contacts #discord{
-    grid-column: 2;
-} */
+
