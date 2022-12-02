@@ -1,0 +1,21 @@
+.skip{
+    position: absolute;
+    top: -40px;
+  }
+  
+  /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+  .skip a:focus{
+    position:relative;
+    top:60px;
+  
+  }
+
+  
+:focus{
+    border:solid 2px;
+  }
+
+.banner_img{
+    max-width: 100px;
+}
+
