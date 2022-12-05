@@ -1,23 +1,42 @@
+nav .home{
+  padding: 5px;
+  text-decoration: underline;
+}
 
+.title{
+  text-align: center;
+  color : #FFCB05;
+  margin-top: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.title p{
+  font-size: 20px;
+}
 
 .gallery{
-  border: 3px solid black;
   width: 90%;
   margin: 10px auto;
-  background-color: blanchedalmond;
 
-
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .gallery img{
   width:100%;
-  border: 10px solid firebrick;
 }
 
-.lb-data .lb-caption{
-  font-size: 40px;
+.games{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+
+
+@media screen and (min-width: 800px){
+  .gallery{
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: space-around;
+  align-items: center;
+  }
 }

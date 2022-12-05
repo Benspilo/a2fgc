@@ -2,9 +2,12 @@ iframe{
   border:solid 1px #777;
   width: 100%;
   height: 500px;
-  frameborder: "0"; 
-  scrolling: no;
   margin: 0 auto;
+}
+
+nav .calendar{
+  padding: 5px;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 800px){
@@ -13,7 +16,7 @@ iframe{
     height: 800px;
   }
 }
-@media screen and (min-width: 2000px){
+@media screen and (min-width: 1900){
   iframe{
     width: 70%;
     height: 800px;
