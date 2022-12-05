@@ -109,6 +109,8 @@ footer p{
   object-fit:fill;
   display: flex;
   justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .Contacts a img{
   max-height: 50px;
