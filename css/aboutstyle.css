@@ -27,11 +27,8 @@ html{
     border: 10px solid #FFCB05;
     border-radius: 10px;
     padding: 30px;
+    font-size: 17px;
   }
-  
-  
-
-
   
   li:hover, :focus{
     text-decoration: underline;
@@ -45,220 +42,227 @@ html{
     border:solid 2px;
   }
   
+.container{
+display: grid;
+grid-template-columns: 1fr 5fr 1fr;
+/* row-gap: 15px; */
+margin-bottom: 20px;
+margin-top: 20px;
+}
 
-   .container{
+
+.container img{
+    width: 150%;
+    border-radius: 10px;
+    /* object-fit: cover; */
+}
+
+.about{
+    grid-column: 2/span 1;
+    grid-row-start: 2;
+}
+.about-image{
+    grid-column: 1/span 3;
+    grid-row-start: 2;
+    overflow: hidden;
+}
+
+.dt{
+    grid-column: 2/span 1;
+    grid-row-start: 3;
+}
+.dt-image{
+    grid-column: 1/span 3;
+    grid-row-start: 3;
+    overflow: hidden;
+}
+
+
+.MMU{
+    grid-column: 2/span 1;
+    grid-row-start: 4;
+}
+.MMU-image{
+    grid-column: 1/span 3;
+    grid-row-start: 4;
+    overflow: hidden;
+
+}
+
+.MMU2{
+    grid-column: 2/span 1;
+    grid-row-start: 5;
+    }
+.MMU2-image{
+    grid-column: 1/span 3;
+    grid-row-start: 5;
+    overflow: hidden;
+    
+}
+
+
+.Community{
+    grid-column: 2/span 1;
+    grid-row-start: 6;
+}
+.Community-image{
+    grid-column: 1/span 3;
+    grid-row-start: 6;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.Memes{
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    row-gap: 15px;
-    }
-  
-
-      .container div:first-child{
-      grid-column: 1/span all;
-      background-image: url("../images/header.jpg");
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  
-
-    .container img{
-        width: 100%;
-    }
-
-    .about{
-      grid-column: 2/span 1;
-      grid-row-start: 2;
-    }
-    .about-image{
-        grid-column: 1/span 3;
-        grid-row-start: 2;
-        overflow: hidden;
-    }
-
-    .dt{
-      grid-column: 2/span 1;
-      grid-row-start: 3;
-    }
-    .dt-image{
-        grid-column: 1/span 3;
-        grid-row-start: 3;
-        max-height: 600px;
-        overflow: hidden;
-    }
+    grid-template-columns: auto auto;
+  }
+.Memes img{
+    width: 100%;
+}
+img .meme4{
+    width: auto;
+    height: 500px;
+    border: solid black 50px;
+}
 
 
-    .MMU{
-      grid-column: 2/span 1;
-      grid-row-start: 4;
-    }
-    .MMU-image{
-        grid-column: 1/span 3;
-        grid-row-start: 4;
-        max-height: 600px;
-        overflow: hidden;
-    
-    }
+.text-block{
+    margin:auto;
+    text-align: center;
 
-    .MMU2{
-        grid-column: 2/span 1;
-        grid-row-start: 5;
-      }
-    .MMU2-image{
-        grid-column: 1/span 3;
-        grid-row-start: 5;
-        max-height: 600px;
-        overflow: hidden;
-      
-    }
+}
 
 
-    .Community{
-      grid-column: 2/span 1;
-      grid-row-start: 6;
-    }
-    .Community-image{
-      grid-column: 1/span 3;
-      grid-row-start: 6;
-      max-height: 600px;
-      overflow: hidden;
-    }
 
-   /* Step 8: Write the selector/rule property to style the .text-block class. */
+
+@media screen and (min-width: 800px){
+
+.container{
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+}
+
+.container img{
+    max-height: 600px;
+    object-fit: cover;
+}
+.Memes{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+.Memes img{
+    width: 100%;
+    max-height: 100%;
+}
+.about-image
+{
+    grid-column: 2/span 2;
+}  
+.about{
+    grid-column: 3/span 2;
+}
+
+.dt-image
+{
+    grid-column: 3/span 2;
+}
+.dt{
+    grid-column: 2/span 2;
+}
+
+.MMU-image
+{
+    grid-column: 2/span 2;
+}
+.MMU
+{
+    grid-column: 3/span 2;
+}
+
+.MMU2-image
+{
+    grid-column: 3/span 2;
+}
+.MMU2
+{
+    grid-column: 2/span 2;
+}
+
+.Community-image
+{
+    grid-column: 2/span 2;
+}
+.Community
+{
+    grid-column: 3/span 2;
+}
+
     .text-block{
-      margin:auto;
-      text-align: center;
-  
-    }
-  
+    max-height: 250;
+    overflow: auto;
+    font-size: 20px;
 
-  
-  @media screen and (min-width: 800px){
-    /* Step 9: Write the selector/rule property to style the nav element */
-    nav{
-      text-align: left;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      padding-right: 0px;
-      padding-left: 0px;
     }
-   
-    /* Step 10: Write the selector/rule property to update the .container class */
-    .container{
-      display: grid;
-      grid-template-columns: 50px auto 500px auto 50px;
-      }
-  
-    /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
-    .about-image
-    {
-        grid-column: 2/span 2;
-    }  
-    .about{
-        grid-column: 3/span 2;
+}
+
+@media screen and (min-width: 2000px){
+nav{
+    text-align: right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 300px auto 900px auto 300px;
     }
 
-    .dt-image
-    {
-        grid-column: 3/span 2;
-    }
-    .dt{
-        grid-column: 2/span 2;
-    }
+.about-image
+{
+    grid-column: 2/span 2;
+}  
+.about{
+    grid-column: 3/span 2;
+}
+
+.dt-image
+{
+    grid-column: 3/span 2;
+}
+.dt{
+    grid-column: 2/span 2;
+}
+
+.MMU-image
+{
+    grid-column: 2/span 2;
+}
+.MMU
+{
+    grid-column: 3/span 2;
+}
+
+.Community-image
+{
+    grid-column: 2/span 2;
+}
+.Community
+{
+    grid-column: 3/span 2;
+}
     
-    .MMU-image
-    {
-        grid-column: 2/span 2;
-    }
-    .MMU
-    {
-        grid-column: 3/span 2;
-    }
+    .text-block{
+    max-height: 250;
+    overflow: auto;
 
-    .MMU2-image
-    {
-        grid-column: 3/span 2;
     }
-    .MMU2
-    {
-        grid-column: 2/span 2;
-    }
-
-    .Community-image
-    {
-        grid-column: 2/span 2;
-    }
-    .Community
-    {
-        grid-column: 3/span 2;
-    }
-
-      .text-block{
-        max-height: 250;
-        overflow: auto;
-      }
-    }
-  
- @media screen and (min-width: 2000px){
-    /* Step 9: Write the selector/rule property to style the nav element */
-    nav{
-      text-align: right;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-   
-    /* Step 10: Write the selector/rule property to update the .container class */
-    .container{
-      display: grid;
-      grid-template-columns: 300px auto 900px auto 300px;
-      }
-  
-    /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
-    .about-image
-    {
-        grid-column: 2/span 2;
-    }  
-    .about{
-        grid-column: 3/span 2;
-    }
-
-    .dt-image
-    {
-        grid-column: 3/span 2;
-    }
-    .dt{
-        grid-column: 2/span 2;
-    }
-    
-    .MMU-image
-    {
-        grid-column: 2/span 2;
-    }
-    .MMU
-    {
-        grid-column: 3/span 2;
-    }
-
-    .Community-image
-    {
-        grid-column: 3/span 2;
-    }
-    .Community
-    {
-        grid-column: 2/span 2;
-    }
-      
-      .text-block{
-        max-height: 250;
-        overflow: auto;
-      }
-    }
+}
 
 
 
 
-    *:focus{
-      border: 2px solid black;
-    }
+*:focus{
+    border: 2px solid black;
+}

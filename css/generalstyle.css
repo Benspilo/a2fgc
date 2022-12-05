@@ -1,49 +1,41 @@
-
-.skip-to-content-link{
-  left: 50%;
-  position:absolute;
-  transform: translateY(-110%);
-}
-.skip-to-content-link:focus{
-  transform: translateY(0%)
-}
 :focus{
     border:solid 2px;
 }
 
-.banner_img{
-background-attachment: fixed; /* Parallax effect */     
-background-position: center;  /* Parallax effect */
-background-repeat: no-repeat; /* Parallax effect */
-background-size: cover;       /* Parallax effect */
-color: white;
-height: 400px;                /* Parallax effect */
-}
-
 html{
     scroll-behavior: smooth;
-  }
-  
-body{
-background-color: #737373;
-font-size: 18px;
-line-height: 1.15;
-margin: 0;
-padding: 0;
 }
 
-footer{
-background-color: black;
-color: white;
-padding-top: 30px;
-text-align: center;
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
 }
-  
-nav{
-    background-color: #ddd;
-    padding: 25px 0; 
-    text-align: left;
-    
+
+
+header{
+  border: 5px solid #FFCB05;
+  display: grid;
+  grid-template-columns: auto  auto;
+  grid-template-rows: 80px;
+  background-color: #FFCB05;
+  text-align: left;
+  align-items: center;
+}
+
+header img{
+  height: 100%;
+  justify-self: end;
 }
 
 nav a:hover, :focus{
@@ -65,16 +57,87 @@ nav a{
   text-decoration: none; 
 }
 
+body{
+  background-color: #00274C;
+  font-size: 18px;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
 
-.Contacts{
-    object-fit:fill;
-    display: grid;
-    grid-template-columns:  15% 15% 15% 15%  ;
-    justify-content: space-around;
-    align-items: center;
+
+
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
+.main {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+
+.footer {
+  height: 50px;
+  margin-top: -50px;
+}
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+
+  /* position: fixed;
+  bottom: 0;
+  width: 100%; */
+}
+
+
+
+footer p{
+  padding-bottom: 20px;
+}
+
+
+
+.Contacts{
+  object-fit:fill;
+  display: flex;
+  /* grid-template-columns: auto 15% 15% 15% 15% auto ;
+  justify-content: space-around;
+  align-items: center; */
+  justify-content: space-between;
+}
 .Contacts a img{
   max-height: 50px;
 }
 
+
+
+@media screen and (min-width: 800px){
+  .Contacts{
+    justify-content: space-around;
+  }
+
+}
+@media screen and (min-width: 2000px){
+  .Contacts{
+    justify-content: space-evenly;
+  }
+
+}
+
+.skip-to-content-link{
+  left: 50%;
+  position:absolute;
+  transform: translateY(-110%);
+  background-color: white;
+}
+.skip-to-content-link:focus{
+  transform: translateY(0%)
+}
