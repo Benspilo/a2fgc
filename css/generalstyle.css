@@ -82,15 +82,13 @@ body {
   margin-top: -50px;
 }
 footer{
-  display-flex
   background-color: black;
   color: white;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   font-size: 30px;
-  flex-shrink: 0;
-  justify-self: flex-end;
+
 /* 
   position: fixed;
   bottom: 0;

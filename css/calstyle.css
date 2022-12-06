@@ -5,7 +5,7 @@ iframe{
   margin: 0 auto;
 }
 
-nav #calendar{
+nav .calendar{
   padding: 5px;
   text-decoration: underline;
 }
@@ -21,4 +21,12 @@ nav #calendar{
     width: 70%;
     height: 800px;
   }
+}
+
+h1{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color:#FFCB05;
 }

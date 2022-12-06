@@ -37,7 +37,7 @@ html{
     text-decoration: underline;
   }
 
-  nav #about{
+  nav .about{
     padding: 5px;
     text-decoration: underline;
   }
